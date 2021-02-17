@@ -1,5 +1,7 @@
 package com.unittest.codecoverage.models;
 
-public class Driver {
+public enum Gender {
+	
+	F, M;
 
 }

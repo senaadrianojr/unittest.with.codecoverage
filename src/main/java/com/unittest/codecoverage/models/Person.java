@@ -1,40 +1,32 @@
 package com.unittest.codecoverage.models;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class Person implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
-	private static final long serialVersionUID = -3254533058084174470L;
+	private String name;
+	private int age;
+	private Gender gender;
 	
-	private Long id;
-	private String firstname;
-	private String lastname;
-	private Date birthday;
-	
-	public Long getId() {
-		return id;
+	public String getName() {
+		return name;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getFirstname() {
-		return firstname;
+	public int getAge() {
+		return age;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setAge(int age) {
+		this.age = age;
 	}
-	public String getLastname() {
-		return lastname;
+	public Gender getGender() {
+		return gender;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-	public Date getBirthday() {
-		return birthday;
-	}
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
+	public void setGender(Gender gender) {
+		this.gender = gender;
 	}
 	
 }
